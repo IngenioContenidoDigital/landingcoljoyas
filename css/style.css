@@ -1,0 +1,195 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,700,800,300);
+
+body{
+    font-family: 'Open Sans';
+    padding: 0;
+    margin: 0;
+    overflow-x: hidden;
+}
+
+footer img{
+    width: 250px;
+    height: auto;
+}
+
+footer span{
+    display: inline-block;
+}
+
+#banner-top{
+    min-width: 100%;
+    height: 490px;
+    /*background: rgba(226,226,226,1);
+    background: -moz-linear-gradient(top, rgba(226,226,226,1) 0%, rgba(219,219,219,1) 36%, rgba(209,209,209,1) 65%, rgba(254,254,254,1) 100%);
+    background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(226,226,226,1)), color-stop(36%, rgba(219,219,219,1)), color-stop(65%, rgba(209,209,209,1)), color-stop(100%, rgba(254,254,254,1)));
+    background: -webkit-linear-gradient(top, rgba(226,226,226,1) 0%, rgba(219,219,219,1) 36%, rgba(209,209,209,1) 65%, rgba(254,254,254,1) 100%);
+    background: -o-linear-gradient(top, rgba(226,226,226,1) 0%, rgba(219,219,219,1) 36%, rgba(209,209,209,1) 65%, rgba(254,254,254,1) 100%);
+    background: -ms-linear-gradient(top, rgba(226,226,226,1) 0%, rgba(219,219,219,1) 36%, rgba(209,209,209,1) 65%, rgba(254,254,254,1) 100%);
+    background: linear-gradient(to bottom, rgba(226,226,226,1) 0%, rgba(219,219,219,1) 36%, rgba(209,209,209,1) 65%, rgba(254,254,254,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e2e2e2', endColorstr='#fefefe', GradientType=0 );*/
+    background-image: url(../images/fondo-banner1.jpg);
+    background-size: cover;
+    background-position-y: none;
+}
+
+#banner-top:before{
+    display: inline-block;
+    background-image: url('../images/detalle-negro.png');
+    opacity: 0.5;
+    background-position: bottom left;
+    background-repeat: no-repeat;
+    background-size: 50%;
+    content:"";
+    width: 480px;
+    height: 100%;   
+}
+
+.joya{
+    display:inline-block;
+    background-image: url(../images/joya.png);
+    background-size: cover;
+    width:220px;
+    height: 220px;
+    float: right;
+    margin-top: 15%;
+    margin-right: 20%;
+}
+
+
+.joya:before{
+   float:right;
+   content:'... muy pronto ...';
+   font-family: 'Open Sans';
+   font-size:22px;
+   font-weight: 700;
+   color:black;
+   margin-top: 100%;
+   margin-right: -120px;
+}
+
+@media (min-width:1920px){
+    .joya{margin-top: 8%;}
+}
+
+
+#banner-top img{
+    position: absolute;
+    top: 2%;
+    left:25%;
+    width: 30%;
+    height: auto;
+    padding-bottom: 10px;
+    opacity: 0.7;
+    border: 5px solid transparent;
+    border-top:none;
+    padding: 15px;
+    -webkit-border-image: url(../images/border.png) 30 round; /* Safari 3.1-5 */
+    -o-border-image: url(../images/border.png) 30 round; /* Opera 11-12.1 */
+    border-image: url(../images/border.png) 30 round;
+}
+
+#banner-bottom{
+    position: relative;
+    min-width: 100%;
+    height: 490px;
+    background-image: url('../images/banner4.png');
+    background-size: cover;
+    background-position: center center;
+}
+
+#banner-top, #banner-bottom{
+    padding: 0px;
+    width: 100%;
+    display: inline-block;
+}
+
+
+#banner-bottom img{
+    position: absolute;
+    bottom: 0;
+    left:25%;
+    right:70%;
+    width: 50%;
+    height: auto;
+}
+
+#que-hacemos{
+    padding-top: 30px;
+    padding-bottom: 50px;
+}
+
+#que-hacemos p{
+    font-family: 'Open Sans';
+    font-size: 32px;
+    font-weight: 400;
+    color:#000;
+    text-align: center;
+}
+
+#que-hacemos div{
+    font-family: 'Open Sans';
+    font-size: 15px;
+    color: gray;
+}
+
+#que-hacemos img{
+    width: 150px;
+    height: auto;
+    margin-bottom: 15px;
+}
+
+.desc{
+    width:55%;
+    margin-left: auto;
+    margin-right:auto;
+}
+
+#insc{
+    padding-top: 25px;
+    padding-bottom: 25px;
+}
+
+#insc p{
+    font-family: 'Open Sans';
+    font-size: 32px;
+    font-weight: 400;
+    text-align: center;
+}
+
+#news{
+    max-width: 320px;
+    margin-left: auto;
+    margin-right: auto;   
+    text-align: center;
+}
+
+#news input{
+    min-width: 100%;
+    margin-top: 10px;
+    min-height: 30px;
+}
+
+#news textarea{
+    min-width: 100%;
+    margin-top: 10px;
+    min-height: 80px;
+}
+
+#news textarea::-webkit-input-placeholder{padding-top: 25px;}
+#news textarea::-moz-placeholder{padding-top: 25px;}
+#news textarea::-ms-input-placeholder{padding-top: 25px;}
+#news textarea::-moz-placeholder{padding-top: 25px;}
+
+
+#news button{
+    min-width: 100%;
+    min-height: 30px;
+    margin-top: 10px;
+    background-color: orange;
+    border: none;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-weight: bold;
+}
