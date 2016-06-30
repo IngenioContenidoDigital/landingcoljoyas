@@ -36,7 +36,12 @@
         <section id="insc">
             <div class="row"><p>Inscr&iacute;bete ya para conocer las ofertas de lanzamiento</p></div>
             <br>
-            <form action="" method="post" id="news" name="news">
+            <?php 
+               if($_GET['estado']=='sent'){
+                   echo '<p class="confirmado">Mensaje enviado con &eacute;xito</p>';
+               }
+            ?>
+            <form action="mail.php" method="post" id="news" name="news">
                 <fieldset>
                     <div class="row"><input type="text" id="nombre" name="nombre" required placeholder="nombres y apellidos"/></div>
                     <div class="row"><input type="email" id="correo" name="correo" required placeholder="correo electr&oacute;nico"/></div>
